@@ -1,0 +1,21 @@
+.beerCard {
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 16px;
+}
+
+.beerCard > img{
+    width: 120px;
+    height: 180px;
+    background-color: darkgray;
+}
+
+.beerCard > h2{
+    color: rgb(62, 45, 1);
+    font-size: 20px;
+}
+
+
+.beerCard > h2, .beerCard > p{
+    margin: 2px 4px
+}

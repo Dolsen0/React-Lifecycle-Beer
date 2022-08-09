@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import BeerCard from "./BeerCard";
 
 function Beers() {
   const [beerlist, setBeerList] = useState();
@@ -16,11 +17,13 @@ function Beers() {
     <>
       <button onClick={() => setBeerType("ale")}>Ales</button>
       <button onClick={() => setBeerType("stouts")}>Stouts</button>
-      <ul>
+      <section id ="beerList" >
         {beerlist.map((beer) => (
-          <li key={beer.id}>{beer.name}</li>
+
+        //   <li key={beer.id}>{beer.name}</li>
+            <BeerCard key={beer.id} beer={beer} />
         ))}
-      </ul>
+      </section>
     </>
   );
 }
